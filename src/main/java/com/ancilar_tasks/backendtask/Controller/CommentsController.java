@@ -21,7 +21,7 @@ public class CommentsController {
     //GET /posts/:id/comments: List comments for a post.
     //DELETE /comments/:id: Delete a specific comment.
 
-    @PostMapping("/posts")
+    @PostMapping("/posts/{postId}/comments")
     public void addCommentToPost(@RequestBody Comments comment) {
         commentsService.addCommentToPost(comment);
     }

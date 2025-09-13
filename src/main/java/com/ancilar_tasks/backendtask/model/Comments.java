@@ -20,7 +20,7 @@ public class Comments {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String postId;
+    private Long postId;
 
     private String author;
 
